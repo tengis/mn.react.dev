@@ -1,76 +1,77 @@
 ---
-title: Start a New React Project
+title: Шинэ React төсөл эхлүүлэх
 ---
 
 <Intro>
 
-If you want to build a new app or a new website fully with React, we recommend picking one of the React-powered frameworks popular in the community. Frameworks provide features that most apps and sites eventually need, including routing, data fetching, and generating HTML.
+Хэрэв та React ашиглан шинэ апп эсвэл шинэ вебсайт бүтээхийг хүсвэл, бид танд React дээр суурилсан түгээмэл ашиглагддаг фраймворкуудаас нэгийг сонгохыг санал болгож байна. Учир нь тухайн фраймворкууд ихэнхи апп болон вебүүдэд эцсийн дүнд хэрэг болдог боломжуудыг өөртөө агуулсан байдаг бөгөөд үүнд routing, data fetching and HTML автоматаар үүсгэх гэх мэт багтсан байдаг.
 
 </Intro>
 
 <Note>
 
-**You need to install [Node.js](https://nodejs.org/en/) for local development.** You can *also* choose to use Node.js in production, but you don't have to. Many React frameworks support export to a static HTML/CSS/JS folder.
+**Local хөгжүүлэлт хийхийн тулд та [Node.js](https://nodejs.org/en/) суулгах шаардлагатай** бөгөөд түүгээр ч зогсохгүй та Node.js -г Production -нд ашиглах боломжтой. Гэвч хэрвээ хүсвэл ашиглахгүй байж болно. Учир нь олонхи React -д суурилсан фраймворкууд static HTML/CSS/JS байрлах хавтас дэмждэг.
 
 </Note>
 
-## Production-grade React frameworks {/*production-grade-react-frameworks*/}
+## Production шаардлага хангасан React фрэймворкууд {/*production-grade-react-frameworks*/}
 
 ### Next.js {/*nextjs*/}
 
-**[Next.js](https://nextjs.org/) is a full-stack React framework.** It's versatile and lets you create React apps of any size--from a mostly static blog to a complex dynamic application. To create a new Next.js project, run in your terminal:
+**[Next.js](https://nextjs.org/) бол шалгарсан full-stack React фрэймворк юм.** Уг фрэймворкоор та энгийн static блогоос эхлээд маш өргөн боломжтой олон төрлийн динамик функцтэй апп хийх боломжтой. Хэрэв Next.js -г ашиглан шинэ апп эхлүүлэхийн тулд та терминал дээр дараах коммандыг ажиллуулна:
 
 <TerminalBlock>
 npx create-next-app
 </TerminalBlock>
 
-If you're new to Next.js, check out the [Next.js tutorial.](https://nextjs.org/learn/foundations/about-nextjs)
+Хэрэв та Next.js -г анхлан ашиглаж байгаа бол дараахи [Next.js хичээл](https://nextjs.org/learn/basics/create-nextjs-app) -г үзээрэй.
 
-Next.js is maintained by [Vercel](https://vercel.com/). You can [deploy a Next.js app](https://nextjs.org/docs/deployment) to any Node.js or serverless hosting, or to your own server. [Fully static Next.js apps](https://nextjs.org/docs/advanced-features/static-html-export) can be deployed to any static hosting.
+Next.js -г [Vercel](https://vercel.com/) хөгжүүлдэг ба та өөрийн [Next.js дээр хөгжүүлэгдсэн аппликэшнээ](https://nextjs.org/docs/deployment) ямар ч төрлийн Node.js эсвэл serverless хостинг, эсвэл өөрийнхөө сервер дээр ч deploy хийж болох юм. Түүнчлэн та [бүрэн static Next.js апп хөгжүүлж буй бол](https://nextjs.org/docs/advanced-features/static-html-export) үүнийгээ бүх төрлийн static хостинг рүү deploy хийж болно.
 
 ### Remix {/*remix*/}
 
-**[Remix](https://remix.run/) is a full-stack React framework with nested routing.** It lets you break your app into nested parts that can load data in parallel and refresh in response to the user actions. To create a new Remix project, run:
+**[Remix](https://remix.run/) бол агуулагдсан (nested) routing -тэй full-stack React фрэймворк юм.** Уг фрэймворкыг ашиглан өөрийн аппыг өөр дотороо агуулагдсан хэсгүүдэд хуваан хөгжүүлж болох ба тухайн хэсгүүд тус тусдаа нэгэн зэрэг өгөгдөл ачаалах бас хэрэглэгчийн action -д үр дүнг үзүүлэх боломжтой юм. Хэрэв та Remix -г ашиглан шинэ апп эхлүүлэхийн тулд та терминал дээр дараах коммандыг ажиллуулна:
 
 <TerminalBlock>
 npx create-remix
 </TerminalBlock>
 
-If you're new to Remix, check out the Remix [blog tutorial](https://remix.run/docs/en/main/tutorials/blog) (short) and [app tutorial](https://remix.run/docs/en/main/tutorials/jokes) (long).
+Хэрэв та Remix -г анхлан ашиглаж байгаа бол дараахи [Remix хичээл](https://remix.run/docs/en/main/tutorials/blog) (богино) -г болон [апп хийх хичээл](https://remix.run/docs/en/main/tutorials/jokes) (урт) үзээрэй.
 
-Remix is maintained by [Shopify](https://www.shopify.com/). When you create a Remix project, you need to [pick your deployment target](https://remix.run/docs/en/main/guides/deployment). You can deploy a Remix app to any Node.js or serverless hosting by using or writing an [adapter](https://remix.run/docs/en/main/other-api/adapter).
+Remix -г [Shopify](https://www.shopify.com/) хөгжүүлдэг ба Remix дээр төсөл үүсгэхдээ та [хаана deploy](https://remix.run/docs/en/main/guides/deployment) хийхээ сонгох хэрэгтэй. Мөн түүнчлэн та дурын Node.js эсвэл serverless хостинг рүү Remix аппликэшнээ [adapter](https://remix.run/docs/en/main/other-api/adapter) ашиглаж эсвэл бичиж deploy хийж болно.
 
 ### Gatsby {/*gatsby*/}
 
-**[Gatsby](https://www.gatsbyjs.com/) is a React framework for fast CMS-backed websites.** Its rich plugin ecosystem and its GraphQL data layer simplify integrating content, APIs, and services into one website. To create a new Gatsby project, run:
+**[Gatsby](https://www.gatsbyjs.com/) fast CMS тэй веб сайтуудад зориулагдсан React дээр суурилсан фрэймворк юм.** Уг фрэймворк нь маш сайн нэмэлтүүдтэй ба GraphQL суурилсан энгийн контент layer, API -ууд болон services гэх мэтийг ашиглан веб хийх явцыг хялбарчилдэг. Хэрэв та Gatsby -г ашиглан шинэ апп эхлүүлэхийн тулд та терминал дээр дараах коммандыг ажиллуулна:
 
 <TerminalBlock>
 npx create-gatsby
 </TerminalBlock>
 
-If you're new to Gatsby, check out the [Gatsby tutorial.](https://www.gatsbyjs.com/docs/tutorial/)
+Хэрэв та Gatsby -г анхлан ашиглаж байгаа бол дараахи [Gatsby хичээл](https://www.gatsbyjs.com/docs/tutorial/) -г үзээрэй.
 
-Gatsby is maintained by [Netlify](https://www.netlify.com/). You can [deploy a fully static Gatsby site](https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting) to any static hosting. If you opt into using server-only features, make sure your hosting provider supports them for Gatsby.
+Gatsby -г [Netlify](https://www.netlify.com/) хөгжүүлдэг. Та [бүрэн static Gatsby сайт](https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting) -г аль ч static хостинг рүү deploy хийж болно. Хэрвээ та server-only features ашиглахыг сонгосон бол таны хостинг server-only features -г дэмжих эсэхийг шалгана уу.
 
 ### Expo (for native apps) {/*expo*/}
 
-**[Expo](https://expo.dev/) is a React framework that lets you create universal Android, iOS, and web apps with truly native UIs.** It provides an SDK for [React Native](https://reactnative.dev/) that makes the native parts easier to use. To create a new Expo project, run:
+**[Expo](https://expo.dev/) -г ашиглан та Android, iOS болон веб дээр native UI -тэй universal апп хийх боломжтой.** Expo нь өөртөө React Native -д зориулсан SDK агуулдаг ба энэ нь native UI хэсгүүдийг хийхэд хялбархан болгож өгдөг. Шинэ Expo төсөл үүсгэхийн тулд та терминал дээр дараах коммандыг ажиллуулна:
 
 <TerminalBlock>
 npx create-expo-app
 </TerminalBlock>
 
-If you're new to Expo, check out the [Expo tutorial](https://docs.expo.dev/tutorial/introduction/).
+Хэрвээ та Expo -г анхлан ашиглаж байгаа бол дараахи [Expo хичээл](https://docs.expo.dev/tutorial/introduction/) -г үзээрэй.
 
-Expo is maintained by [Expo (the company)](https://expo.dev/about). Building apps with Expo is free, and you can submit them to the Google and Apple app stores without restrictions. Expo additionally provides opt-in paid cloud services.
+Expo -г [Expo (the company)](https://expo.dev/about) хөгжүүлдэг. Expo -г ашиглан апп хийх нь үнэгүй бөгөөд та түүнийг Google болон Apple app store дээр ямар нэгэн хязгаарлалтгүйгээр гаргаж болно. Мөн түүнчлэн Expo нь нэмэлтээр төлбөртэй cloud service -үүдийг санал болгодог.
 
 <DeepDive>
 
-#### Can I use React without a framework? {/*can-i-use-react-without-a-framework*/}
+#### Би React -г ямар нэгэн фрэймфоркгүйгээр ашиглах боломжтой юу? {/*can-i-use-react-without-a-framework*/}
 
-You can definitely use React without a framework--that's how you'd [use React for a part of your page.](/learn/add-react-to-an-existing-project#using-react-for-a-part-of-your-existing-page) **However, if you're building a new app or a site fully with React, we recommend using a framework.**
+Мэдээж хэрэг та React -г ямар нэгэн фрэймфорк ашиглахгүйгээр ашиглаж болно -- [энд хэрхэн React -г таны вэб сайтын нэг хэсэгт ашиглахыг харуулсан байна.](/learn/add-react-to-an-existing-project#using-react-for-a-part-of-your-existing-page) **Гэхдээ бид танд шинэ апп эсвэл вебсайт бүтээхийн тулд фрэймфорк ашиглахыг санал болгож байна.**
 
-Here's why.
+
+Яагаад вэ гэвэл.
 
 Even if you don't need routing or data fetching at first, you'll likely want to add some libraries for them. As your JavaScript bundle grows with every new feature, you might have to figure out how to split code for every route individually. As your data fetching needs get more complex, you are likely to encounter server-client network waterfalls that make your app feel very slow. As your audience includes more users with poor network conditions and low-end devices, you might need to generate HTML from your components to display content early--either on the server, or during the build time. Changing your setup to run some of your code on the server or during the build can be very tricky.
 
